@@ -115,3 +115,7 @@ python scripts/consultas_sql.py
 ## 👤 Autor
 
 Creado por **Leonardo Morales Rodríguez (leomorgzzz)** 
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
