@@ -16,6 +16,7 @@ Este proyecto simula un caso real de análisis de ventas para un negocio utiliza
 - matplotlib
 - seaborn
 - Excel (openpyxl)
+- pytest
 - Git & GitHub
 - VSCode + Anaconda
 
