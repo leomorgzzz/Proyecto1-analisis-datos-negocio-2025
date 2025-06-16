@@ -36,33 +36,43 @@ El objetivo es demostrar dominio de herramientas fundamentales de análisis de d
 ---
 
 ## 📁 Estructura de archivos
+```bash
+📦 Proyecto1-analisis-datos-negocio-2025
+├── data
+│   └── sample
+│       └── empresa.db             # Base de datos SQLite generada y usada
+├── reports
+│   └── reporte_analisis.xlsx      # Reporte final en Excel con análisis
+├── figures
+│   ├── grafico_region.png         # Gráfico de ventas por región
+│   ├── grafico_mes.png            # Gráfico de ventas por mes
+│   └── grafico_productos.png      # Gráfico de top productos
+├── scripts
+│   ├── crear_base.py              # Creación de la base de datos y tablas
+│   ├── insertar_datos.py          # Inserción de datos simulados
+│   ├── consultas_sql.py           # Consultas básicas de ejemplo
+│   ├── analisis_avanzado.py       # Análisis completo de ventas
+│   ├── graficos.py                # Visualización automatizada de resultados
+│   └── ejecutar_todo.py           # Script para correr todo en orden
+├── .gitignore                     # Archivos y carpetas ignoradas por git
+├── LICENSE                        # Licencia del proyecto
+├── README.md                      # Documentación y descripción del proyecto
+├── requirements.txt               # Dependencias del proyecto
+└── AUTHORS.md                     # Autores y colaboradores
 
-📦 Proyecto1-analisis-datos-negocio
-
-- ── crear_base.py ------------> # Creación de la base de datos y tablas
-- ── insertar_datos.py --------> # Inserción de datos simulados
-- ── consultas_sql.py ---------> # Consultas básicas de ejemplo
-- ── analisis_avanzado.py -----> # Análisis completo de ventas
-- ── graficos.py --------------> # Visualización automatizada de resultados
-- ── empresa.db ---------------> # Base de datos SQLite generada
-- ── reporte_analisis.xlsx ----> # Reporte final en Excel
-- ── grafico_region.png -------> # Gráfico de ventas por región
-- ── grafico_mes.png ----------> # Gráfico de ventas por mes
-- ── grafico_productos.png ----> # Gráfico de top productos
-- ── README.md ----------------> # Descripción del proyecto
-
+```
 ---
 
 ## 📈 Ejemplos de resultados
 
 ## Ventas por Región
-![Ventas por región](grafico_region.png)
+![Ventas por región](figures/grafico_region.png)
 
 ## Ventas por Mes
-![Ventas por región](grafico_mes.png)
+![Ventas por región](figures/grafico_mes.png)
 
 ## Producto más vendido
-![Ventas por región](grafico_productos.png)
+![Ventas por región](figures/grafico_productos.png)
 
 ---
 
