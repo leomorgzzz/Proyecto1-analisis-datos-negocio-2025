@@ -1,2 +1,8 @@
-# Auto detect text files and perform LF normalization
+# Handle line endings automatically for all text files
 * text=auto
+
+# Ensure consistent encoding
+* charset=utf-8
+
+# Set linguist-detectable language 
+*.py linguist-language=Python

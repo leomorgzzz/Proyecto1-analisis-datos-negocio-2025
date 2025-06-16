@@ -1,0 +1,6 @@
+id,producto,cantidad,precio,fecha,cliente
+1,Laptop,2,15000,2024-05-15,Distribuidora Nari
+2,Monitor,1,5000,2024-05-16,Refaccionaria Yaquison
+3,Impresora,3,3000,2024-05-17,Servicios MarKa
+4,Escritorio,1,7000,2024-05-18,Proveedor Namos
+5,Mouse,5,500,2024-05-19,Comercial BAT
