@@ -82,7 +82,7 @@ El objetivo es demostrar dominio de herramientas fundamentales de análisis de d
 1. Clonar este repositorio:
 
 ```bash
-git clone https://github.com/leomorgzzz/Proyecto1-analisis-datos-negocio
+git clone https://github.com/leomorgzzz/Proyecto1-analisis-datos-negocio-2025
 cd Proyecto1-analisis-datos-negocio
 ```
 2. (Opcional) Crear un entorno virtual en Anaconda o venv.
