@@ -109,3 +109,9 @@ python scripts/consultas_sql.py
 ```
 
 6. Listo! Ya puede visualizar los archivos de Excel (.xlsx) y las Gráficas en formato PNG.
+
+---
+
+## 👤 Autor
+
+Creado por **Leonardo Morales Rodríguez (leomorgzzz)** 
