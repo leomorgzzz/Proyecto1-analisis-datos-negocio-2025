@@ -2,7 +2,7 @@ import sqlite3
 import random
 from datetime import datetime, timedelta
 
-conn = sqlite3.connect('empresa.db')
+conn = sqlite3.connect('data/sample/empresa.db')
 cursor = conn.cursor()
 
 Clientes = [

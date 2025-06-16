@@ -1,7 +1,10 @@
 import sqlite3
 import pandas as pd
+import os
 
-conn = sqlite3.connect('empresa.db')
+os.makedirs('reports', exist_ok=True)
+
+conn = sqlite3.connect('data/sample/empresa.db')
 
 clientes = pd.read_sql_query("SELECT * FROM Clientes", conn)
 productos = pd.read_sql_query("SELECT * FROM Productos", conn)
@@ -35,7 +38,7 @@ ventas_mes = ventas_full.groupby('mes')['total_venta'].sum()
 print("\nVentas por mes:")
 print(ventas_mes)
 
-with pd.ExcelWriter("reporte_analisis.xlsx") as writer:
+with pd.ExcelWriter("reports/reporte_analisis.xlsx") as writer:
     ventas_full.to_excel(writer, sheet_name="Ventas Detalle", index=False)
     productos_unidades.to_frame("Unidades Vendidas").to_excel(writer, sheet_name="Productos Unidades")
     clientes_top.to_frame("Total Comprado").to_excel(writer, sheet_name="Clientes Top")

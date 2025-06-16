@@ -1,11 +1,12 @@
 import subprocess
 
 scripts = [
-    "crear_base.py",
-    "insertar_datos.py",
-    "consultas_sql.py",
-    "analisis_avanzado.py",
-    "graficos.py"
+    "scripts/crear_base.py",
+    "scripts/insertar_datos.py",
+    "scripts/consultas_sql.py",
+    "scripts/analisis_pandas.py",
+    "scripts/analisis_avanzado.py",
+    "scripts/graficos.py"
 ]
 
 for script in scripts:

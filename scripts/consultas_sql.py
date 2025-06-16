@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('empresa.db')
+conn = sqlite3.connect('data/sample/empresa.db')
 cursor = conn.cursor()
 
 cursor.execute("SELECT COUNT(*) FROM Ventas")

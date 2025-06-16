@@ -2,10 +2,13 @@ import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
+import os
+
+os.makedirs('figures', exist_ok=True)
 
 sns.set(style='whitegrid', palette='muted', font_scale=1.5)
 
-conn = sqlite3.connect('empresa.db')
+conn = sqlite3.connect('data/sample/empresa.db')
 
 clientes = pd.read_sql_query("SELECT * FROM Clientes", conn)
 productos = pd.read_sql_query("SELECT * FROM Productos", conn)
@@ -25,7 +28,7 @@ plt.title("Ventas dependiendo de la Región")
 plt.ylabel("Total de Ventas")
 plt.xlabel("Región")
 plt.tight_layout()
-plt.savefig("grafico_region.png")
+plt.savefig("figures/grafico_region.png")
 plt.close()
 
 ventas_mes = ventas_full.groupby('mes')['total_venta'].sum()
@@ -36,7 +39,7 @@ plt.ylabel("Total de Ventas")
 plt.xlabel("Mes")
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("grafico_mes.png")
+plt.savefig("figures/grafico_mes.png")
 plt.close()
 
 productos_unidades = ventas_full.groupby('nombre_producto')['cantidad'].sum().sort_values(ascending=False).head(5)
@@ -46,7 +49,7 @@ plt.title("5 Productos más Unidades Vendidas")
 plt.xlabel("Unidades Vendidas")
 plt.ylabel("Producto")
 plt.tight_layout()
-plt.savefig("grafico_productos.png")
+plt.savefig("figures/grafico_productos.png")
 plt.close()
 
 print("Gráficos generados y guardados en archivos .png")

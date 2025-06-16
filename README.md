@@ -1,4 +1,6 @@
 # Proyecto 1 — Análisis de Ventas de Negocio (End-to-End)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Python Version](https://img.shields.io/badge/python-3.10+-blue)
 
 Este proyecto fue desarrollado como parte de mi formación en Ciencias Genómicas. Aunque mi campo es la bioinformática, aquí aplico herramientas de análisis de datos enfocadas a contextos empresariales, desarrollando habilidades que son transferibles tanto a la industria como a la investigación.
 
@@ -73,6 +75,11 @@ git clone https://github.com/leomorgzzz/Proyecto1-analisis-datos-negocio
 cd Proyecto1-analisis-datos-negocio
 ```
 2. (Opcional) Crear un entorno virtual en Anaconda o venv.
+```bash
+conda create -n proyecto1 python=3.11
+conda activate proyecto1
+pip install -r requirements.txt
+```
 
 3. Instalar las dependencias necesarias:
 
@@ -82,12 +89,13 @@ pip install -r requirements.txt
 4. Ejecutar el pipeline completo:
 
 ```bash
-python ejecutar_todo.py
+python scripts/ejecutar_todo.py
+
 ```
 5. (Opcional) Puede ejecutar cualquier otro archivo .py independientemente siguiendo la misma estructura. Ejemplo:
 
 ```bash
-python consultas_sql.py
+python scripts/consultas_sql.py
 ```
 
 6. Listo! Ya puede visualizar los archivos de Excel (.xlsx) y las Gráficas en formato PNG.

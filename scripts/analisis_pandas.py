@@ -1,7 +1,10 @@
 import sqlite3
 import pandas as pd 
+import os
 
-conn = sqlite3.connect('empresa.db')
+os.makedirs('reports', exist_ok=True)
+
+conn = sqlite3.connect('data/sample/empresa.db')
 
 df_clientes = pd.read_sql_query("SELECT * FROM Clientes", conn)
 df_productos = pd.read_sql_query("SELECT * FROM Productos", conn)
@@ -16,7 +19,7 @@ print(df_productos.head())
 print("\nVentas: ")
 print(df_ventas.head())
 
-with pd.ExcelWriter("reporte_inicial.xlsx") as writer:
+with pd.ExcelWriter("reports/reporte_inicial.xlsx") as writer:
     df_clientes.to_excel(writer, sheet_name="Clientes", index=False)
     df_productos.to_excel(writer, sheet_name="Productos", index=False)
     df_ventas.to_excel(writer, sheet_name="Ventas", index=False)

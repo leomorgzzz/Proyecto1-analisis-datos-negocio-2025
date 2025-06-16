@@ -1,6 +1,15 @@
+import os
 import sqlite3
 
-conn = sqlite3.connect('empresa.db')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+db_path = os.path.join(BASE_DIR, "..", "data", "sample", "empresa.db")
+
+db_path = os.path.abspath(db_path)
+
+print(f"Creando/Conectando base de datos en: {db_path}")
+
+conn = sqlite3.connect(db_path)
 
 cursor = conn.cursor()
 
