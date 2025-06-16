@@ -19,7 +19,10 @@ __pycache__/
 
 *.sqlite3
 
-/figures/grafico_mes.png
-/figures/grafico_productos.png
-/figures/grafico_region.png
+figures/*
+reports/*
+data/sample/*
 
+!data/sample/.gitkeep
+!figures/.gitkeep
+!reports/.gitkeep

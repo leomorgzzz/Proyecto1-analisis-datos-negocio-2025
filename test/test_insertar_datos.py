@@ -10,4 +10,4 @@ def test_insertar_datos():
     crear_base(TEST_DB_PATH)
     insertar_datos(TEST_DB_PATH)
 
-    # Aquí podrías agregar más asserts para validar inserción si quieres
+   
