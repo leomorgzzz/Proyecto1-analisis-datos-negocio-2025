@@ -38,28 +38,39 @@ El objetivo es demostrar dominio de herramientas fundamentales de análisis de d
 
 ## 📁 Estructura de archivos
 ```bash
-📦 Proyecto1-analisis-datos-negocio-2025
-├── data
-│   └── sample
-│       └── empresa.db             # Base de datos SQLite generada y usada
-├── reports
-│   └── reporte_analisis.xlsx      # Reporte final en Excel con análisis
-├── figures
-│   ├── grafico_region.png         # Gráfico de ventas por región
+Proyecto1-analisis-datos-negocio-2025/
+├── data/
+│   └── sample/
+│       ├── .gitkeep               # Archivo vacío para mantener carpeta en git
+│       └── empresa.db             # Base de datos SQLite generada automáticamente
+├── reports/
+│   ├── .gitkeep                   # Archivo vacío para mantener carpeta en git
+│   └── reporte_analisis.xlsx      # Reporte final en formato Excel
+├── figures/
+│   ├── .gitkeep                   # Archivo vacío para mantener carpeta en git
+│   ├── grafico_region.png         # Gráfico de ventas por ubicación del cliente
 │   ├── grafico_mes.png            # Gráfico de ventas por mes
-│   └── grafico_productos.png      # Gráfico de top productos
-├── scripts
-│   ├── crear_base.py              # Creación de la base de datos y tablas
-│   ├── insertar_datos.py          # Inserción de datos simulados
-│   ├── consultas_sql.py           # Consultas básicas de ejemplo
-│   ├── analisis_avanzado.py       # Análisis completo de ventas
-│   ├── graficos.py                # Visualización automatizada de resultados
-│   └── ejecutar_todo.py           # Script para correr todo en orden
-├── .gitignore                     # Archivos y carpetas ignoradas por git
-├── LICENSE                        # Licencia del proyecto
-├── README.md                      # Documentación y descripción del proyecto
-├── requirements.txt               # Dependencias del proyecto
-└── AUTHORS.md                     # Autores y colaboradores
+│   └── grafico_productos.png      # Gráfico de productos más vendidos
+├── config.py                      # Configuraciones globales (e.g., ruta de la base de datos)
+├── scripts/
+│   ├── __init__.py                # Hace el directorio un paquete Python
+│   ├── crear_base.py              # Crea estructura de la base de datos
+│   ├── insertar_datos.py          # Inserta datos simulados
+│   ├── consultas_sql.py           # Consultas SQL básicas
+│   ├── analisis_avanzado.py       # Análisis con pandas, agrupaciones y KPIs
+│   ├── graficos.py                # Visualización con matplotlib
+│   └── ejecutar_todo.py           # Ejecuta todo el pipeline (DB → análisis → gráficos)
+├── test/
+│   ├── __init__.py                # Permite importar como paquete
+│   ├── test_crear_base.py         # Pruebas de creación de la base de datos
+│   ├── test_insertar_datos.py     # Pruebas de inserción de datos
+│   └── test_analisis_pandas.py    # Pruebas del análisis y generación del reporte
+├── .gitignore                     # Ignora base de datos, gráficos y reportes generados
+├── pytest.ini                     # Configuración para el framework de testing
+├── LICENSE                        # Licencia MIT del proyecto
+├── README.md                      # Documentación general del repositorio
+├── requirements.txt               # Librerías necesarias para ejecutar todo
+└── AUTHORS.md                     # Créditos del autor y colaboradores
 
 ```
 ---
