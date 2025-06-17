@@ -2,7 +2,6 @@ import sqlite3
 import os
 
 def crear_base(db_path):
-    # Asegurarse que la carpeta de la base existe
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
 
     print(f"Creando/Conectando base de datos en: {db_path}")
@@ -44,7 +43,6 @@ def crear_base(db_path):
 
     print("Base de datos y tablas creadas con éxito.")
 
-# Para que funcione ejecutándolo directamente
 if __name__ == "__main__":
     db_path = os.path.join("data", "sample", "empresa.db")
     crear_base(db_path)
